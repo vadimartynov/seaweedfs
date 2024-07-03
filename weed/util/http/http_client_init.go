@@ -5,15 +5,15 @@ import (
 )
 
 var (
-	// filerHttpClient *HTTPClient
+	filerHttpClient *HTTPClient
 	// volumeHttpClient *HTTPClient
 	// masterHttpClient *HTTPClient
 	globalHttpClient *HTTPClient
 )
 
-// func GetFilerHttpClient() *HTTPClient {
-// 	return filerHttpClient
-// }
+func GetFilerHttpClient() *HTTPClient {
+	return filerHttpClient
+}
 
 // func GetVolumeHttpClient() *HTTPClient {
 // 	return volumeHttpClient
@@ -29,10 +29,10 @@ func GetGlobalHttpClient() *HTTPClient {
 
 func InitAllHttpClients() {
 	var err error
-	// filerHttpClient, err = NewFilerHttpClient()
-	// if err != nil {
-	// 	glog.Fatalf("error init filer http client: %v", err)
-	// }
+	filerHttpClient, err = NewFilerHttpClient()
+	if err != nil {
+		glog.Fatalf("error init filer http client: %v", err)
+	}
 	// volumeHttpClient, err = NewVolumeHttpClient()
 	// if err != nil {
 	// 	glog.Fatalf("error init volume http client: %v", err)

@@ -1,8 +1,8 @@
 package http
 
-// func NewFilerHttpClient(opt ...HttpClientOpt)(*HTTPClient, error) {
-// 	return NewHttpClient(Filer, opt...)
-// }
+func NewFilerHttpClient(opt ...HttpClientOpt)(*HTTPClient, error) {
+	return NewHttpClient(Filer, opt...)
+}
 
 // func NewVolumeHttpClient(opt ...HttpClientOpt)(*HTTPClient, error) {
 // 	return NewHttpClient(Volume, opt...)
