@@ -104,12 +104,21 @@ cert = ""
 key = ""
 ca = ""
 
+# volume server https options
 [https.volume]
 cert = ""
 key = ""
 ca = ""
 
+# master server https options
 [https.master]
 cert = ""
 key = ""
 ca = ""
+
+# filer server https options
+[https.filer]
+cert = ""
+key = ""
+ca = ""
+# disable_tls_verify_client_cert = true|false (default: false)
