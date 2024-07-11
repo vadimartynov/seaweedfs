@@ -11,6 +11,7 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"strconv"
 	"time"
+	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
 )
 
 var (
@@ -22,8 +23,8 @@ var (
 )
 
 func main() {
-
 	flag.Parse()
+	util_http.InitGlobalHttpClient()
 
 	if *isWrite {
 		startGenerateMetadata()

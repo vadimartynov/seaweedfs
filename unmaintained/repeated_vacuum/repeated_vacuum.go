@@ -26,6 +26,7 @@ var (
 
 func main() {
 	flag.Parse()
+	util_http.InitGlobalHttpClient()
 
 	util.LoadConfiguration("security", false)
 	grpcDialOption := security.LoadClientTLS(util.GetViper(), "grpc.client")
